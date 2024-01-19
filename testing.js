@@ -10,3 +10,12 @@ var favoriteFood = prompt("What is your favorite food?");
 
 console.log("I multiply 10 * 23 equals " + robot);
 console.log("Your favorite food is " + favoriteFood + ".")
+
+for (var i = 0; i <= 5; ++i){
+   i = i + 1;
+   console.log(i);
+}
+
+
+
+
