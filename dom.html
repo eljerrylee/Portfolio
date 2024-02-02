@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM</title>
+        <style>
+            div {
+                margin: auto;
+                width: 80%;
+                outline: solid;
+                
+            }
+
+            #button {
+                position: absolute;
+                top: 50%;
+                left: 45%;
+                padding: 10px;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <h1>DOM Manipulation and Events</h1>
+    </header>
+    <div id = "container">
+    </div>
+    <!--Created a button-->
+    <form>
+        <input type="button" id="button" value="Change Color">
+    </form>
+    <script>
+        var div = document.getElementById("container");
+        
+        //Step 5: Utilizing the loop to repeat five time.
+        for (var i = 1; i <= 5; i++){
+
+            var newParagraph = document.createElement("p");
+            var textHello = document.createTextNode("Hello World!");
+            newParagraph.appendChild(textHello);
+            div.appendChild(newParagraph);
+        }
+
+        // Step 7: Change the color to grey function.
+        function backgroundColor(){
+            var div = document.getElementById("container");
+            var body = document.body;
+            
+
+            div.style.backgroundColor = "blue";
+            body.style.backgroundColor = "yellow";
+            div.style.color = "yellow";
+        }
+
+        //Step 8: Connect it to the button.
+        var changeColor = () => {
+            backgroundColor();
+        }
+
+        document.getElementById("button").addEventListener("click", changeColor);
+
+        
+
+    </script>
+</body>
+</html>
