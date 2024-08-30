@@ -1,83 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jerry's Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-<body>
-<header>
-    <h1>Jerry Lee Gutierrez</h1>
-    <p>Software Developer</p>
-</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jerry's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  </head>
+  <body>
+    <header></header>
+    <section id="about">
+      <div class="hero-1">
+        <h2 class="name">
+          Jerry Lee<br />
+          Gutierrez
+        </h2>
+        <p class="hero-subheadline">
+          Welcome!<br>
+          Explore my experiences in innovative design and dynamic
+          development.
+        </p>
+        <p class="hero-description">
+          Hi there! As a recent graduate specializing in full-stack web
+          development, I’m passionate about building comprehensive web solutions
+          and exploring desktop and software applications. I thrive on figuring
+          out complex challenges and delivering results-driven, innovative
+          solutions.
+        </p>
+        <a class="button" onclick="location.href='#target-section'">View Project</a>
+      </div>
+      <div>
+        <img src="photos/coding.jpg">
+      </div>
+    </section>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-    <a href="arrays.html">Arrays & Function</a>
-    <a href="unitOne.html">Unit One Project</a>
-    <a href="Unit 2/Unit2Exam/index.html">Unit 2 Exam</a>
-    <a href="Unit3/ArrayMethods.html">Unit 3</a>
-    
-</nav>
-
-<section id="about">
-    <h2>About Me</h2>
-    <p>Hello, I'm Jerry Lee Gutierrez, a dedicated Computer Programming student at 
-        Southeast Technical College. Currently pursuing an Associate of Applied Science degree, 
-        I have gained proficiency in several programming languages including C#, HTML, CSS, and Java. 
-        My journey in the world of databases includes a solid understanding of SQL Server and Oracle fundamentals.</p>
-
-    <p>Equipped with the tools like Visual Studio and Eclipse, I am on the path to becoming a software developer. 
-        I am excited to bring my skills to the professional realm, combining my technical expertise with a strong foundation 
-        in problem-solving.</p>
-
-    <p>I am just a few courses away from completing my degree, and I am actively expanding my knowledge in Advanced Microsoft 
-        Web Development, JavaScript, and Web Services. My goal is to contribute to the world of software 
-        development and continue my journey of learning and growth.</p>
-</section>
-
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-        <div>
-            <h3>Programming Languages</h3>
-            <p>C#, HTML, CSS, Java</p>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="languages">
+          <h3>Languages</h3>
+          <ul class="list">
+            <li>
+            <span class="pl-icon">C#</span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" /></li>
+            <li>
+              <span class="pl-icon">HTML</span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /></li>
+            <li>
+            <span class="pl-icon">CSS</span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /></li>
+            <li>
+            <span class="pl-icon">JavaScript</span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></li>
+            <li><span class="pl-icon">PHP</span>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+            </li>
+            <li>
+            <span class="pl-icon">Java</span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" /></li>
+          </ul>
+        </div>
+        <div class="database">
+          <h3>Databases</h3>
+          <ul class="list">
+            <li><span class="pl-icon">Microsoft SQL Server</span>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" />
+            </li>
+            <li><span class="mysql">MySQL</span>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+            </li>
+          </ul>
+        </div>
+        <div class="tool">
+          <h3>IDE</h3>
+          <ul class="list">
+            <li><span class="pl-icon">VS</span>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" />
+            </li>
+            <li>
+            <Span class="pl-icon">Eclipse</span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" /></li>
+            <li><span class="pl-icon">VS Code</span>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+            </li>
+          </ul>
+        </div>
+        <div class="web-dev">
+          <h3>Web Development</h3>
+          <ul class="list">
+            <li><span class="pl-icon">ASP.NET</span>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg" />
+            </li>
+            <li><span class="pl-icon">Bootstrap</span>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+            </li>
+            <li><span class="pl-icon">jQuery</span>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />
+            </li>
+          </ul>
         </div>
         <div>
-            <h3>Database</h3>
-            <p>SQL Server, Oracle (Fundamentals)</p>
+      </div>
+    </section>
+    <!--First Project-->
+    <section id="target-section" class="project">
+      <article class="project-article">
+        <div class="column-one">
+          <h3 class="project-title">Trusty Ticket</h3>
+          <p class="project-role">UX/UI Front End Design</p>
+          <p class="project-description">A platform for creating and managing events, handling ticket sales, and resolving disputes with secure Stripe payment integration, designed with zero start-up costs and a focus on user privacy.</p>
+          <a class="project-link" href="trusty_ticket.html"><p class="project-link">More about this project<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="arrow">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg>
+          </p></a>
         </div>
-        <div>
-            <h3>Development Tools</h3>
-            <p>Visual Studio, Eclipse</p>
+        <div class="column-two">
+          <img class="project-img" src="photos/trustyTicket_home.png">
         </div>
-        <div>
-            <h3>Web Development</h3>
-            <p>Advanced Microsoft Web Development, JavaScript</p>
-        </div>
-        <div>
-            <h3>Web Services (in Progress)</h3>
-            <p>RESTful APIs, SOAP</p>
-        </div>
-        <div>
-            <h3>Additional Skills</h3>
-            <p>Problem Solving, Team Collaboration, Software Design</p>
-        </div>
-    </div>
-</section>
+      </article>
+    </section>
+    <!--Second Project-->
+    <section class="project">
+      <div>
+        <article class="project-article">
+          <div class="column-one">
+            <h3 class="project-title">Fishing for Fish</h3>
+            <p class="project-role">Web Design</p>
+            <p class="project-description">A landing page for a fishing app that highlights the app's ability to identify prime fishing spots. Designed to attract users with a clear overview of the app's features and benefits, offering a smooth introduction to the service.</p>
+            <a class="project-link" href="fish_project.html"><p class="project-link">More about this project<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="arrow">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg>
+            </p></a>
+          </div>
+          <div class="column-two">
+            <img class="project-img" src="photos/fish_home.png">
+          </div>
+      </article>
+    </section>
+    <!-- Third Project -->
+    <section class="project">
+      <div>
+        <article class="project-article">
+          <div class="column-one">
+            <h3 class="project-title">Project Highlights</h3>
+            <p class="project-role">Creative Development & Design</p>
+            <p class="project-description">A collection of small projects demonstrating a broad spectrum of skills in web development and design, featuring various creative and technical applications.</p>
+            <a class="project-link" href="project_highlights.html"><p class="project-link">More about this project<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="arrow">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg>
+            </p></a>
+          </div>
+          <div class="column-two">
+            <img class="project-img" src="photos/Screenshot 2024-08-29 220534.png">
+          </div>
+      </article>
+    </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: eljerrylee@gmail.com</p>
-    <p>Phone: (507) 329-5726</p>
-</section>
+    <section class="project">
+      <div>
+        <img class="coming-soon-img" src="photos/coming_soon.jpg">
+      </article>
+    </section>
 
-<footer>
-    &copy; 2024 Your Portfolio
-</footer>
-<script src="testing.js"></script>
-</body>
+    <!--Contact Section-->
+    <section class="contact">
+      <h2>About me</h2>
+      <article class="contact-container">
+      <div class="column-one">
+        I recently graduated from Southeast Technical College with an Associate Degree in Computer Programming. As an aspiring web and software developer, I enjoy creating innovative and user-friendly digital solutions. My education and hands-on experience have equipped me with a strong foundation in programming and design, and I am eager to apply my skills to real-world projects and continue growing in the tech industry.
+      </div>
+      <div class="column-two">
+        <p class="email">Email: eljerrylee@gmail.com</p>
+        <p class="phone">Phone: 507 329 5726</p>
+        <a class="button" href="pdf/Jerry_Resume.pdf">Download My Resume</a>
+      </div>
+    </article>
+    </section>
+  </body>
 </html>
